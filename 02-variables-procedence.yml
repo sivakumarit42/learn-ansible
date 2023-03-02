@@ -40,7 +40,7 @@
   tasks:
     - name: Get uptime output
       ansible.builtin.shell: uptime
-      register: out
+      register: out                    #register the value-out (out is total value)
 
     - name: Print out
       ansible.builtin.debug:
@@ -48,7 +48,7 @@
 
     - name: Declare a variable
       ansible.builtin.set_fact:
-        status: "{{ out.rc }}"
+        status: "{{ out.rc }}"          #set the particular value into standard variable-out.rc(rc is particular value)
 
     - name: Print Status
       ansible.builtin.debug:
