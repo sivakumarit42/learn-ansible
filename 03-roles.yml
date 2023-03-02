@@ -1,7 +1,7 @@
-#- name: Role level variables
-#  hosts: localhost
-#  roles:
-#    - demo
+- name: Role level variables
+  hosts: localhost
+  roles:
+    - demo
 
 - name: Role level variables
   hosts: localhost
