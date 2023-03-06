@@ -3,4 +3,4 @@
   tasks:
     - name: Print test1 value
       ansible.builtin.debug:
-        msg: "{{ lookup('amazon.aws.aws_ssm', 'test2', region='us-east-1') }}"     #access the value of parameter from AWS
+        msg: "{{ lookup('amazon.aws.aws_ssm', 'test1', region='us-east-1') }}"   #access the value of parameter from AWS
