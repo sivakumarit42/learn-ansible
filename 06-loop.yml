@@ -15,6 +15,8 @@
 
     - name: Print loop value map
       ansible.builtin.debug:
-        msg: Fruit name - {{item.name}}
+        msg: Fruit name - {{item.name}}, Quantity - {{item.quantity}}
       loop:
-        { { name: fruit1, quantity: 10,}, { name: fruit2, quantity: 10,}, { name: fruit3, quantity: 10,},}
+        - { name: fruit1, quantity: 10,}
+        - { name: fruit2, quantity: 20,}
+        - { name: fruit3, quantity: 30,}
