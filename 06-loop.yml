@@ -1,0 +1,6 @@
+- name: Loop
+  hosts: localhost
+  tasks:
+    - name: Print loop value
+      ansible.builtin.debug:
+        msg: Fruit name - Apple
