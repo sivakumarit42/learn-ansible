@@ -5,17 +5,17 @@
       ansible.builtin.debug:
         msg: Fruit name - Apple
 
-    - name: Print loop value list
+    - name: Print Fruit Name
       ansible.builtin.debug:
-        msg: Fruit name - {{item}}                          #item is default variable
+        msg: Fruit name - {{ item }}                          #item is default variable
       loop:                                                 #loop is keyword
         - apple
         - banana
         - goa
 
-    - name: Print loop value map
+    - name: Print Fruit Name with quantity
       ansible.builtin.debug:
-        msg: Fruit name - {{item.name}}, Quantity - {{item.quantity}}
+        msg: Fruit name - {{ item.name }}, Quantity - {{ item.quantity }}
       loop:
         - { name: fruit1, quantity: 10,}
         - { name: fruit2, quantity: 20,}
