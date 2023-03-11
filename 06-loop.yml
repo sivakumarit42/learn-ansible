@@ -1,7 +1,7 @@
 - name: Loop
   hosts: localhost
   tasks:
-    - name: Print value
+    - name: Print fruit name
       ansible.builtin.debug:
         msg: Fruit name - Apple
 
@@ -9,6 +9,6 @@
       ansible.builtin.debug:
         msg: Fruit name - {{item}}                          #item is default variable
       loop:                                                 #loop is keyword
-        -apple
-        -banana
-        -goa
+        - apple
+        - banana
+        - goa
