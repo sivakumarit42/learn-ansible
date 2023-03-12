@@ -22,3 +22,5 @@
         - { name: fruit3, quantity: 30,}
 
 ## for i in Apple Bana ; do echo $i
+## loop in ansible is expecting only lists
+
