@@ -20,3 +20,5 @@
         - { name: fruit1, quantity: 10,}
         - { name: fruit2, quantity: 20,}
         - { name: fruit3, quantity: 30,}
+
+## for i in Apple Bana ; do echo $i
